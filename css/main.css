@@ -642,6 +642,13 @@ footer .footer_menu a {
 footer .footer_menu a:hover {
   text-decoration: underline;
 }
+footer .footer_menu i {
+  width: 1.8rem;
+  font-size: 1.2rem;
+  vertical-align: 0.05em;
+  text-align: center;
+  color: #103471;
+}
 footer .footer_mid-right .column {
   margin-right: 60px;
 }
