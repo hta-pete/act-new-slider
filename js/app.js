@@ -42,8 +42,8 @@ $(function(){
 
   $('.hero_slider').slick({
     fade:true,
-    autoplay: true,
-    autoplaySpeed: 6000,
+    //autoplay: true,
+    //autoplaySpeed: 12000,
     infinite: true,
     pauseOnHover: false,
     pauseOnFocus: false,
