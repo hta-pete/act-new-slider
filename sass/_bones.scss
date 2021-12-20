@@ -41,8 +41,8 @@ FONT STYLES
 ––––––––––––––––––––––––––––––––––––––––––– */
 // Headlines
 [class*="headline_"] {
-  //font-family:"Oswald";
-  font-weight:800;
+  font-family:"Oswald";
+  font-weight:700;
   text-transform: uppercase;
 }
 .headline_xl{
@@ -53,11 +53,11 @@ FONT STYLES
 .headline_lg{
   font-size:6rem;
   line-height:5rem;
-  letter-spacing:-0.08em;
+  letter-spacing:-0.06em;
 }
 .headline_md{
   font-size:3.2rem;
-  letter-spacing:-0.05em;
+  letter-spacing:-0.03em;
 }
 .headline_sm{
   font-size:2.6rem;
@@ -65,7 +65,7 @@ FONT STYLES
 }
 .headline_xs{
   font-size:2.2rem;
-  letter-spacing:-0.03em;
+  letter-spacing:-0.02em;
 }
 
 //Headings
