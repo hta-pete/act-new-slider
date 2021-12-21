@@ -42,8 +42,6 @@ $(function(){
 
   $('.hero_slider').slick({
     fade:true,
-    //autoplay: true,
-    //autoplaySpeed: 12000,
     infinite: true,
     pauseOnHover: false,
     pauseOnFocus: false,
@@ -55,6 +53,35 @@ $(function(){
     nextArrow: $('.hero .next-btn')
   });
 
+  var subSlideOptions = {
+    autoplay: false,
+    fade:true,
+    autoplaySpeed: 2000,
+    infinite: true,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    pauseOnDotsHover: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    prevArrow: false,
+    nextArrow: false,
+    speed: 2400,
+    cssEase: 'ease-out', 
+  },
+  $subSlides = $('.sub-slides');
+
+  $subSlides.slick(subSlideOptions);
+  $subSlides.slick('slickPlay');
+
+  var toggleSubSlides = function() { 
+    if( $('.slick-current .sub-slides').length ){
+      $subSlides.slick('slickPlay');
+    } else{
+      $subSlides.slick('slickPause');
+    }  
+  }
+
   $window.on("load", function(){
     $('.slick-current .hero-copy').addClass('active');
   });
@@ -63,8 +90,10 @@ $(function(){
   $('.hero_slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
     $('.hero-copy').removeClass('active');
     $('.slick-current .hero-copy').addClass('active');
+    
+    toggleSubSlides();
+    
   });
-
 
 
 });

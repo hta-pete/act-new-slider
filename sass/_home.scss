@@ -30,7 +30,7 @@
 			}
 		}
 		&.slick-active{
-			img, video{
+			.hero-video{
 				@include opacity(1);
 				@include transform(scale(1));
 			}
@@ -41,7 +41,7 @@
 		left:0;
 		top:50%;
 		@include transform(translateY(-50%));
-		width:45%;
+		width:50%;
 		text-align:center;
 		img{
 			display:inline-block !important;
@@ -69,21 +69,14 @@
 	}
 	.hero-video{
 		width:100%;
+		will-change: transform;
+		@include opacity(0);
+		@include transform(scale(1.2));
+		@include transition(transform 2s $easeOutExpo);
 		img{
 			display:block;
 			width:100%;
 			height:auto;
-			@include opacity(0);
-			@include transform(scale(1.2));
-			@include transition(transform 2s $easeOutExpo);
-		}
-		video{
-			display:block;
-			width:100%;
-			height:auto;
-			@include opacity(1);
-			@include transform(scale(1));
-			@include transition(transform 2s $easeOutExpo);
 		}
 	}
 	.prev-btn, .next-btn{
@@ -91,19 +84,19 @@
 		position:absolute;
 		text-align:center;
 		top:50%;
-		margin-top:-25px;
-		height:50px;
+		margin-top:-35px;
+		height:70px;
 		width:30px;
-		background:rgba(14,30,57,0.7);
+		background:rgba(10,40,90,0.7);
 		color:white;
 		@include opacity(0);
 		@include transition(all 0.8s $easeOutExpo);
 		i{
 			font-size:1.8rem;
-			line-height:50px;
+			line-height:70px;
 		}
 		&:hover{
-			background:rgba(14,30,57,0.85);
+			background:rgba(10,40,90,0.9);
 		}
 	}
 	.prev-btn{
@@ -148,6 +141,7 @@
 	}
 }
 
+
 // ———————————————————————————————————
 // VIDE OINTRO
 // ———————————————————————————————————
@@ -170,6 +164,10 @@
 	}
 }
 
+.top-left-bottom-map{
+	background:url("../img/maps/left-top-bottom-map.png") no-repeat top left;
+	background-size:auto 100%;
+}
 .page-menu{
 	.page-menu_wrap-links{
 		a{
@@ -318,7 +316,7 @@
 // ——————————————————————————————————— 
 .best-fleets{
 	background:white url("../img/tire-tread-bg.png") no-repeat center top;
-	background-size:600px;
+	background-size:480px;
 	padding-top:120px;
 	img{
 		max-width:768px;

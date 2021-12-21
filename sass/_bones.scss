@@ -61,10 +61,12 @@ FONT STYLES
 }
 .headline_sm{
   font-size:2.6rem;
-  letter-spacing:-0.03em;
+  line-height:1.2;
+  letter-spacing:-0.02em;
 }
 .headline_xs{
-  font-size:2.2rem;
+  font-size:2.4rem;
+  line-height:1.2;
   letter-spacing:-0.02em;
 }
 
@@ -83,7 +85,7 @@ FONT STYLES
   letter-spacing:-0.03em;
 }
 .heading_sm{
-  font-size:1.6rem;
+  font-size:1.8rem;
   letter-spacing:-0.02em;
 }
 .heading_xs{
@@ -175,17 +177,24 @@ GRID
   margin:0 auto;
   padding:0 20px;
 }
-.container_lg{
-  position:relative;
-  width:100%;
-  max-width:1480px;
-  margin:0 auto;
-  padding:0 20px;
-}
 .container_md{
   position:relative;
   width:100%;
+  max-width:1120px;
+  margin:0 auto;
+  padding:0 20px;
+}
+.container_sm{
+  position:relative;
+  width:100%;
   max-width:960px;
+  margin:0 auto;
+  padding:0 20px;
+}
+.container_xs{
+  position:relative;
+  width:100%;
+  max-width:800px;
   margin:0 auto;
   padding:0 20px;
 }
